@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  font-family: "Roboto Thin", sans-serif;
+  border: 2px solid #3b013b;
+  margin: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  max-width: 100vw;
+}
+
+:host(.error) {
+  border-color: orange;
+}
+
+form {
+  input {
+    font: inherit;
+    color: #3b013b;
+    padding: 0.1rem 0.25rem;
+    display: block;
+    margin-bottom: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #3b013b;
+    background: #3b013b;
+    color: white;
+
+    &:hover, &:active {
+      background: #750175;
+      border-color: #750175;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      background: #ccc;
+      border-color: #ccc;
+      color: white;
+      cursor: not-allowed;
+    }
+  }
+}
+
+

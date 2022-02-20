@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-course.esm.js"></script>
+    <script nomodule src="/build/stencil-course.js"></script>
+    <style>
+      body {
+        font-family: "Roboto Thin", sans-serif;
+      }
+      .side-nav ul {
+        list-style: none;
+      }
+      .side-nav a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .side-nav li {
+        margin: 1rem 0;
+      }
+
+      #side-drawer-btn {
+        border: none;
+        outline: none;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+<!--    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>-->
+<!--    <button id="side-drawer-btn" >Open sidemenu</button>-->
+<!--    <p>Test text <custom-tooltip text="Esto es un ejemplo"/></p>-->
+<!--    <css-side-drawer my-title="Main Menu">-->
+<!--      <nav class="side-nav">-->
+<!--        <ul>-->
+<!--          <li><a href="">Link</a></li>-->
+<!--          <li><a href="">OtherLink</a></li>-->
+<!--          <li><a href="">A third Link</a></li>-->
+<!--        </ul>-->
+<!--      </nav>-->
+<!--    </css-side-drawer>-->
+
+<!--    <script>-->
+<!--      const sideDrawerButton = document.querySelector('#side-drawer-btn');-->
+<!--      const sideDrawer = document.querySelector('css-side-drawer');-->
+<!--      sideDrawerButton.addEventListener('click', ()=> {-->
+<!--        if(!sideDrawer.opened) {-->
+<!--          console.log('Opening SideDrawer...');-->
+<!--          sideDrawer.open();-->
+<!--        }-->
+<!--      })-->
+<!--    </script>-->
+  <css-stock-price stock-symbol="AAPL"></css-stock-price>
+  <css-stock-finder></css-stock-finder>
+  </body>
+</html>
